@@ -28,4 +28,4 @@ Contributions are welcome! Please submit a Pull Request if you'd like to add or 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is released into the public domain under the [Unlicense](LICENSE).

@@ -28,4 +28,4 @@ scoop install TuringRiff-bucket/<应用名称>
 
 ## 许可证
 
-本项目基于 MIT 许可证开源 - 详情请查看 [LICENSE](LICENSE) 文件。
+本项目基于 [Unlicense](LICENSE) 发布至公共领域。

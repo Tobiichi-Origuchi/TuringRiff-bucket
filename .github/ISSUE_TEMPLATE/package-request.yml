@@ -14,11 +14,11 @@ body:
     label: Criteria
     description: For a package to be acceptable in this bucket, it should be
     options:
-    - label: Criteria 1
+    - label: The software is NOT already available in [Scoop official buckets](https://scoop.sh/#/apps) (main, extras, versions, etc.).
       required: true
-    - label: Criteria 2
+    - label: The software provides a publicly accessible download link (no login/paywall required).
       required: true
-    - label: Criteria 3
+    - label: The software runs on Windows and is distributed as a portable archive or installer.
       required: true
 - type: input
   attributes:
