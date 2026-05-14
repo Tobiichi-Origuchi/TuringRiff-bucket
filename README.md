@@ -1,10 +1,17 @@
 # TuringRiff-bucket
 
+[![CI Tests](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/ci.yml)
 [![Excavator](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/excavator.yml)
 
 A personal [Scoop](https://scoop.sh) bucket for custom or hard-to-find Windows applications and tools.
 
 [中文说明](README-zh.md)
+
+## Available Apps
+
+| App | Description | Homepage |
+|:----|:-----------|:---------|
+| [pilinara](bucket/pilinara.json) | Flutter BiliBili desktop client forked from PiliPlus, with offline cache support | [GitHub](https://github.com/Starfallan/PiliNara) |
 
 ## Usage
 

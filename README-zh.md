@@ -1,10 +1,17 @@
 # TuringRiff-bucket
 
+[![CI Tests](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/ci.yml)
 [![Excavator](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/TuringRiff/TuringRiff-bucket/actions/workflows/excavator.yml)
 
 这是个人的 [Scoop](https://scoop.sh) 软件仓库（Bucket），主要用于收录一些自定义的、或者在官方仓库中找不到的 Windows 应用程序和工具。
 
 [English README](README.md)
+
+## 已收录应用
+
+| 应用 | 描述 | 主页 |
+|:----|:----|:----|
+| [pilinara](bucket/pilinara.json) | 基于 PiliPlus 的 BiliBili Flutter 第三方桌面客户端，支持离线缓存 | [GitHub](https://github.com/Starfallan/PiliNara) |
 
 ## 如何使用
 
