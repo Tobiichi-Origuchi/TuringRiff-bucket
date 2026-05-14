@@ -1,8 +1,12 @@
 {
     "version": "2.0.7.1-March7th",
-    "description": "PiliNara - A Flutter BiliBili desktop client forked from PiliPlus, with offline cache support",
+    "description": "A Flutter BiliBili desktop client forked from PiliPlus, with offline cache support",
     "homepage": "https://github.com/Starfallan/PiliNara",
     "license": "GPL-3.0-only",
+    "notes": [
+        "PiliNara is NOT portable. Settings and data are stored in '%APPDATA%\\com.example\\PiliNara'.",
+        "To remove all user data on uninstall, run: scoop uninstall --purge pilinara"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Starfallan/PiliNara/releases/download/2.0.7.1-March7th/PiliNara_windows_2.0.7%2B5151_x64_portable.zip",
@@ -17,10 +21,6 @@
         ]
     ],
     "post_uninstall": "if ($purge) { Remove-Item \"$env:APPDATA\\com.example\\PiliNara\", \"$env:LOCALAPPDATA\\com.example\\PiliNara\" -Force -Recurse -ErrorAction SilentlyContinue }",
-    "notes": [
-        "PiliNara is NOT portable. Settings and data are stored in '%APPDATA%\\com.example\\PiliNara'.",
-        "To remove all user data on uninstall, run: scoop uninstall --purge pilinara"
-    ],
     "checkver": {
         "url": "https://api.github.com/repos/Starfallan/PiliNara/releases/latest",
         "regex": "/download/(?<version>[^/]+)/PiliNara_windows_(?<flutter>[\\d.]+)%2B(?<build>\\d+)_x64_portable\\.zip"
