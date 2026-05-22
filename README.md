@@ -11,6 +11,7 @@ A personal [Scoop](https://scoop.sh) bucket for custom or hard-to-find Windows a
 
 | App | Description | Homepage |
 |:----|:-----------|:---------|
+| [antigravity-manager](bucket/antigravity-manager.json) | Antigravity account manager and switching tool | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) |
 | [pilinara](bucket/pilinara.json) | Flutter BiliBili desktop client forked from PiliPlus, with offline cache support | [GitHub](https://github.com/Starfallan/PiliNara) |
 
 ## Usage

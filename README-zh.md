@@ -11,6 +11,7 @@
 
 | 应用 | 描述 | 主页 |
 |:----|:----|:----|
+| [antigravity-manager](bucket/antigravity-manager.json) | Antigravity 账号管理器与切换工具 | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) |
 | [pilinara](bucket/pilinara.json) | 基于 PiliPlus 的 BiliBili Flutter 第三方桌面客户端，支持离线缓存 | [GitHub](https://github.com/Starfallan/PiliNara) |
 
 ## 如何使用
