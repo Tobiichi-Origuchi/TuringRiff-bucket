@@ -3,11 +3,12 @@ name: Excavator
 on:
   workflow_dispatch:
   schedule:
-    # run every 4 hours
-    - cron: '20 */4 * * *'
+    # run every 8 hours
+    - cron: '20 */8 * * *'
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   excavate:
@@ -21,3 +22,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: 1
+      - name: Report Failure
+        if: failure()
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🚨 Excavator Auto-Update Workflow Failed',
+              body: `The Excavator workflow encountered an error while scanning or updating manifests.\n\nPlease check the [Actions Log](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`
+            })
