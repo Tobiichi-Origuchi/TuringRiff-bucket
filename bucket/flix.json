@@ -1,0 +1,33 @@
+{
+    "version": "2.0.7.113",
+    "description": "Flix - 像聊天一样传文件. 跨平台文件传输工具，支持局域网内设备间快速分享文件。",
+    "homepage": "https://flix.center",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Tobiichi-Origuchi/flix-pkg/releases/download/windows-v2.0.7.113/Flix-Windows-2.0.7.113-portable.zip",
+            "hash": "de5725ece72dade4bae9f07f49a29f8b7b6fa38b59d28724eccaa91e76d55f62"
+        }
+    },
+    "bin": "flix.exe",
+    "shortcuts": [
+        [
+            "flix.exe",
+            "Flix"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Tobiichi-Origuchi/flix-pkg",
+        "regex": "windows-v(?<version>[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Tobiichi-Origuchi/flix-pkg/releases/download/windows-v$version/Flix-Windows-$version-portable.zip"
+            }
+        },
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
