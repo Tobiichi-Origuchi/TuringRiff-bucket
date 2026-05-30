@@ -25,19 +25,6 @@
             "ZedG"
         ]
     ],
-    "post_install": [
-        "$parent_dir = Split-Path $dir -Parent",
-        "$desktop = [Environment]::GetFolderPath('Desktop')",
-        "$ws = New-Object -ComObject WScript.Shell",
-        "$lnk = $ws.CreateShortcut(\"$desktop\\ZedG.lnk\")",
-        "$lnk.TargetPath = \"$parent_dir\\current\\ZedG.exe\"",
-        "$lnk.WorkingDirectory = \"$parent_dir\\current\"",
-        "$lnk.Save()"
-    ],
-    "pre_uninstall": [
-        "$desktop = [Environment]::GetFolderPath('Desktop')",
-        "Remove-Item \"$desktop\\ZedG.lnk\" -ErrorAction SilentlyContinue"
-    ],
     "checkver": {
         "github": "https://github.com/x6nux/zed-globalization"
     },
