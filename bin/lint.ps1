@@ -12,7 +12,7 @@ $hasErrors = $false
 foreach ($file in $manifests) {
     Write-Host "Checking: $($file.Name)..." -NoNewline
     $errors = [System.Collections.Generic.List[string]]::new()
-    
+
     # 1. JSON parsing check
     $jsonText = Get-Content -Path $file.FullName -Raw -Encoding UTF8
     $json = $null
