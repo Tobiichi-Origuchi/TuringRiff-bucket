@@ -16,6 +16,7 @@ jobs:
     name: Test
     runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
         shell: [powershell, pwsh]
     defaults:
