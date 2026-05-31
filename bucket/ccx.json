@@ -14,9 +14,7 @@
         }
     },
     "bin": "ccx.exe",
-    "checkver": {
-        "github": "https://github.com/BenedictKing/ccx"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

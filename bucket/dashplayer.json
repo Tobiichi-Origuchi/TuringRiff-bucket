@@ -1,6 +1,6 @@
 {
     "version": "6.0.1",
-    "description": "为英语学习者量身打造的视频播放器",
+    "description": "Video player tailored for English learners",
     "homepage": "https://github.com/solidSpoon/DashPlayer",
     "license": "MIT",
     "architecture": {
@@ -21,9 +21,7 @@
             "DashPlayer"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/solidSpoon/DashPlayer"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

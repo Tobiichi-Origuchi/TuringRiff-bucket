@@ -1,6 +1,6 @@
 {
     "version": "2.0.7.113",
-    "description": "Flix - 像聊天一样传文件. 跨平台文件传输工具，支持局域网内设备间快速分享文件。",
+    "description": "Flix - Share files like chatting. Cross-platform LAN file transfer tool for fast sharing between devices.",
     "homepage": "https://flix.center",
     "license": "Freeware",
     "architecture": {

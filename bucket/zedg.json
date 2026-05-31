@@ -25,9 +25,7 @@
             "ZedG"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/x6nux/zed-globalization"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

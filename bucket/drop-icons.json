@@ -17,9 +17,7 @@
         ]
     ],
     "persist": "Config.ini",
-    "checkver": {
-        "github": "https://github.com/genesistoxical/drop-icons"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
