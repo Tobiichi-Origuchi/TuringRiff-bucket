@@ -12,7 +12,15 @@
 | 应用 | 描述 | 主页 |
 |:----|:----|:----|
 | [antigravity-manager](bucket/antigravity-manager.json) | Antigravity 账号管理器与切换工具 | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) |
+| [bili23-downloader](bucket/bili23-downloader.json) | 跨平台的 B 站视频下载工具 (Bilibili Video Downloader) | [GitHub](https://github.com/ScottSloan/Bili23-Downloader) |
+| [ccx](bucket/ccx.json) | Claude / Codex / Gemini API 代理与网关 | [GitHub](https://github.com/BenedictKing/ccx) |
+| [dashplayer](bucket/dashplayer.json) | 为英语学习者量身打造的视频播放器 | [GitHub](https://github.com/solidSpoon/DashPlayer) |
+| [drop-icons](bucket/drop-icons.json) | 拖拽式图像到图标 (.ico) 转换器，支持批量处理与现代样式 | [GitHub](https://github.com/genesistoxical/drop-icons) |
+| [flix](bucket/flix.json) | Flix - 像聊天一样传文件。跨平台局域网设备间快速分享与文件传输工具 | [Flix](https://flix.center) |
+| [helium](bucket/helium.json) | 基于 Chromium 的网页浏览器，默认提供极佳的隐私保护、无偏见广告拦截与无臃肿体验 | [Helium](https://helium.computer) |
+| [mpv-lazy](bucket/mpv-lazy.json) | mpv-lazy 懒人包，整合了着色器与滤镜方案的 mpv 播放器中文配置 | [GitHub](https://github.com/hooke007/mpv_PlayKit) |
 | [pilinara](bucket/pilinara.json) | 基于 PiliPlus 的 BiliBili Flutter 第三方桌面客户端，支持离线缓存 | [GitHub](https://github.com/Starfallan/PiliNara) |
+| [zedg](bucket/zedg.json) | Zed Editor 汉化版本 (Localized / 汉化版) | [GitHub](https://github.com/x6nux/zed-globalization) |
 
 ## 如何使用
 
