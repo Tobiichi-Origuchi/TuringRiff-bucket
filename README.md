@@ -14,6 +14,7 @@ A personal [Scoop](https://scoop.sh) bucket for custom or hard-to-find Windows a
 | [antigravity-manager](bucket/antigravity-manager.json) | Antigravity account manager and switching tool | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) |
 | [bili23-downloader](bucket/bili23-downloader.json) | Cross-platform Bilibili video downloader | [GitHub](https://github.com/ScottSloan/Bili23-Downloader) |
 | [ccx](bucket/ccx.json) | Claude / Codex / Gemini API Proxy and Gateway | [GitHub](https://github.com/BenedictKing/ccx) |
+| [cockpit-tools](bucket/cockpit-tools.json) | Universal AI IDE account manager with multi-account switching and quota monitoring | [GitHub](https://github.com/jlcodes99/cockpit-tools) |
 | [dashplayer](bucket/dashplayer.json) | A video player tailored for English learners | [GitHub](https://github.com/solidSpoon/DashPlayer) |
 | [drop-icons](bucket/drop-icons.json) | Drag and drop image to icon (.ico) converter, with batch processing and adaptive corners | [GitHub](https://github.com/genesistoxical/drop-icons) |
 | [flix](bucket/flix.json) | Chat-like cross-platform file transfer tool for fast sharing within local networks | [Flix](https://flix.center) |

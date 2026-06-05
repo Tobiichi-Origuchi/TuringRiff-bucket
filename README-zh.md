@@ -14,6 +14,7 @@
 | [antigravity-manager](bucket/antigravity-manager.json) | Antigravity 账号管理器与切换工具 | [GitHub](https://github.com/lbjlaq/Antigravity-Manager) |
 | [bili23-downloader](bucket/bili23-downloader.json) | 跨平台的 B 站视频下载工具 (Bilibili Video Downloader) | [GitHub](https://github.com/ScottSloan/Bili23-Downloader) |
 | [ccx](bucket/ccx.json) | Claude / Codex / Gemini API 代理与网关 | [GitHub](https://github.com/BenedictKing/ccx) |
+| [cockpit-tools](bucket/cockpit-tools.json) | 通用 AI IDE 账号管理与切换工具，支持多账号切换和额度监控 | [GitHub](https://github.com/jlcodes99/cockpit-tools) |
 | [dashplayer](bucket/dashplayer.json) | 为英语学习者量身打造的视频播放器 | [GitHub](https://github.com/solidSpoon/DashPlayer) |
 | [drop-icons](bucket/drop-icons.json) | 拖拽式图像到图标 (.ico) 转换器，支持批量处理与现代样式 | [GitHub](https://github.com/genesistoxical/drop-icons) |
 | [flix](bucket/flix.json) | Flix - 像聊天一样传文件。跨平台局域网设备间快速分享与文件传输工具 | [Flix](https://flix.center) |

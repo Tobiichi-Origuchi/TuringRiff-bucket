@@ -1,0 +1,36 @@
+{
+    "version": "0.24.12",
+    "description": "Universal AI IDE account manager with multi-account switching and quota monitoring.",
+    "homepage": "https://github.com/jlcodes99/cockpit-tools",
+    "license": "CC-BY-NC-SA-4.0",
+    "notes": [
+        "Cockpit Tools is NOT portable. Settings and data are stored in '%APPDATA%\\com.jlcodes.cockpit-tools'.",
+        "To remove all user data on uninstall, run: scoop uninstall --purge cockpit-tools"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jlcodes99/cockpit-tools/releases/download/v0.24.12/Cockpit.Tools_0.24.12_x64-setup.exe#/dl.7z",
+            "hash": "e7a02d6221b1445724102f517b391bbaf7ba9edc55f2b47876c2081487063cd4"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse -ErrorAction SilentlyContinue",
+    "bin": "cockpit-tools.exe",
+    "shortcuts": [
+        [
+            "cockpit-tools.exe",
+            "Cockpit Tools"
+        ]
+    ],
+    "post_uninstall": "if ($purge) { Remove-Item \"$env:APPDATA\\com.jlcodes.cockpit-tools\", \"$env:LOCALAPPDATA\\com.jlcodes.cockpit-tools\" -Force -Recurse -ErrorAction SilentlyContinue }",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jlcodes99/cockpit-tools/releases/download/v$version/Cockpit.Tools_$version_x64-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
