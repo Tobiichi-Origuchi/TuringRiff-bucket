@@ -16,6 +16,13 @@
             "Bili23 Downloader"
         ]
     ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.json\") -or !(Get-Item \"$persist_dir\\config.json\").Length) {",
+        "    New-Item \"$persist_dir\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+        "    Set-Content -Path \"$persist_dir\\config.json\" -Value '{\"misc\":{\"check_update_when_lauch\":false}}'",
+        "}"
+    ],
+    "persist": "config.json",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
