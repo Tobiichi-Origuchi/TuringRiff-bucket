@@ -3,10 +3,6 @@
     "description": "A Flutter BiliBili desktop client forked from PiliPlus, with offline cache support",
     "homepage": "https://github.com/Starfallan/PiliNara",
     "license": "GPL-3.0-only",
-    "notes": [
-        "PiliNara is NOT portable. Settings and data are stored in '%APPDATA%\\com.example\\PiliNara'.",
-        "To remove all user data on uninstall, run: scoop uninstall --purge pilinara"
-    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Starfallan/PiliNara/releases/download/2.0.7.4-Hyacinthia/PiliNara_windows_2.0.7%2B5293_x64_portable.zip",
@@ -20,7 +16,22 @@
             "PiliNara"
         ]
     ],
-    "post_uninstall": "if ($purge) { Remove-Item \"$env:APPDATA\\com.example\\PiliNara\", \"$env:LOCALAPPDATA\\com.example\\PiliNara\" -Force -Recurse -ErrorAction SilentlyContinue }",
+    "installer": {
+        "script": [
+            ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
+            "New-PersistDirectory \"$env:APPDATA\\com.example\\PiliNara\" \"$persist_dir\\AppData\" -Migrate",
+            "New-PersistDirectory \"$env:LOCALAPPDATA\\com.example\\PiliNara\" \"$persist_dir\\LocalAppData\" -Migrate"
+        ]
+    },
+    "pre_uninstall": [
+        "$bucket = $install.bucket",
+        ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
+        "Stop-App",
+        "Remove-Junction \"$env:APPDATA\\com.example\\PiliNara\"",
+        "Remove-Junction \"$env:LOCALAPPDATA\\com.example\\PiliNara\"",
+        "Remove-EmptyDirectory \"$env:APPDATA\\com.example\"",
+        "Remove-EmptyDirectory \"$env:LOCALAPPDATA\\com.example\""
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/Starfallan/PiliNara/releases/latest",
         "regex": "/download/(?<version>[^/]+)/PiliNara_windows_(?<flutter>[\\d.]+)%2B(?<build>\\d+)_x64_portable\\.zip"
