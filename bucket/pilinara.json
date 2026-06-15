@@ -1,12 +1,12 @@
 {
-    "version": "2.0.7.4-Hyacinthia",
+    "version": "2.0.9.1-Mydeimos",
     "description": "A Flutter BiliBili desktop client forked from PiliPlus, with offline cache support",
     "homepage": "https://github.com/Starfallan/PiliNara",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Starfallan/PiliNara/releases/download/2.0.7.4-Hyacinthia/PiliNara_windows_2.0.7%2B5293_x64_portable.zip",
-            "hash": "0acdfd5144b342044ea843f0fb40eefb7d15726ad2a89450d895fe68e2ed236f"
+            "url": "https://github.com/Starfallan/PiliNara/releases/download/2.0.9.1-Mydeimos/PiliNara_windows_2.0.9%2B5404_x64_portable.zip",
+            "hash": "7425bb92913aeabbef3af90fb2ca29d0340f52bd9f657f8c01df39b930d0ccfb"
         }
     },
     "extract_dir": "PiliNara-Win",
