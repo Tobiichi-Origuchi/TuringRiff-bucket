@@ -10,24 +10,22 @@
         }
     },
     "bin": "flix.exe",
+    "shortcuts": [
+        [
+            "flix.exe",
+            "..\\Flix"
+        ]
+    ],
     "installer": {
         "script": [
             ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
-            "New-PersistDirectory \"$env:APPDATA\\com.ifreedomer\\flix\" \"$persist_dir\\AppData\" -Migrate",
-            "$currentExe = Join-Path (Split-Path $dir) 'current\\flix.exe'",
-            "$lnkPath = Join-Path $env:APPDATA 'Microsoft\\Windows\\Start Menu\\Programs\\Flix.lnk'",
-            "$WshShell = New-Object -ComObject WScript.Shell",
-            "$shortcut = $WshShell.CreateShortcut($lnkPath)",
-            "$shortcut.TargetPath = $currentExe",
-            "$shortcut.WorkingDirectory = Join-Path (Split-Path $dir) 'current'",
-            "$shortcut.Save()"
+            "New-PersistDirectory \"$env:APPDATA\\com.ifreedomer\\flix\" \"$persist_dir\\AppData\" -Migrate"
         ]
     },
     "pre_uninstall": [
         "$bucket = $install.bucket",
         ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
         "Stop-App",
-        "Remove-Item (Join-Path $env:APPDATA 'Microsoft\\Windows\\Start Menu\\Programs\\Flix.lnk') -ErrorAction SilentlyContinue",
         "Remove-Junction \"$env:APPDATA\\com.ifreedomer\\flix\"",
         "Remove-EmptyDirectory \"$env:APPDATA\\com.ifreedomer\""
     ],
